@@ -1,8 +1,8 @@
 {
-  "name": "nyt-top“,
+  "name": "nyt-top",
   "version": "1.0.0",
-  "description": "A node.js wrapper for The New York Times Top Stories API v1”,
-  "main": “nyt-top.js",
+  "description": "A node.js wrapper for The New York Times Top Stories API v1",
+  "main": "nyt-top.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
