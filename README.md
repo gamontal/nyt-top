@@ -1,2 +1,2 @@
-# node-nyt
-nodejs wrapper for the New York Times Article Search API v2
+# nyt-top
+A node.js wrapper for The New York Times Top Stories API v1
