@@ -1,13 +1,13 @@
 # nyt-top (The Top Stories API)
 A Node.js wrapper for [The New York Times](http://www.nytimes.com/) [Top Stories API v1](http://developer.nytimes.com/docs/read/top_stories_api)
 
-##Installation
+## Installation
 
 ```
 npm install nyt-top
 ```
 
-##Usage Example
+## Usage Example
 
 ```javascript
 var nyt = require('nyt-top');
@@ -18,7 +18,7 @@ nyt.setKey(api_key);
 nyt.section('science').last_updated; // => 2015-11-14T12:50:20-05:00
 ```
 
-##API
+## API
 
 To use the Top Stories API, you must sign up for an API key. Usage is limited to 5,000 requests per day (rate limits are subject to change). Please read and agree to the API Terms of Use and the Attribution Guidelines before you proceed.
 
@@ -69,6 +69,6 @@ Description: Returns `article` object
 - Visit http://developer.nytimes.com/docs/read/top_stories_api for more information about the official API.
 
 
-##License
+## License
 
 [MIT](https://github.com/gmontalvoriv/nyt-top/blob/master/LICENSE)
