@@ -22,8 +22,7 @@ nyt.section('science').last_updated; // => 2015-11-14T12:50:20-05:00
 
 To use the Top Stories API, you must sign up for an API key. Usage is limited to 5,000 requests per day (rate limits are subject to change). Please read and agree to the API Terms of Use and the Attribution Guidelines before you proceed.
 
-`setKey`
-----------
+#### `setKey`
 
 Description: Sets developer key to make requests
 
@@ -34,8 +33,7 @@ Description: Sets developer key to make requests
 | `api_key`  | string    |   yes    |
 
 
-`section`
-----------
+#### `section`
 
 Description: Returns `article` object
 
