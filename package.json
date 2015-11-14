@@ -1,6 +1,6 @@
 {
   "name": "nyt-top",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A node.js wrapper for The New York Times Top Stories API v1",
   "main": "nyt-top.js",
   "scripts": {
