@@ -14,7 +14,7 @@ var nyt_top = function() {
 	          var httpGet = $.get;
 	        }
 
-                exports.get_key = function(api_key) { this.key = api_key; }
+                exports.set_key = function(api_key) { this.key = api_key; }
                 
 	        exports.section = function(section) {
 	          var url = 'http://api.nytimes.com/svc/topstories/v1/' + section + '.json?' + 'api-key=' + this.key;
