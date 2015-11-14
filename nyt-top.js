@@ -1,4 +1,4 @@
-var nyt_top = function() {
+var topstories = function() {
 	        if (typeof require == 'function') {
 	          var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 	          var exports = module.exports = {};	
@@ -14,7 +14,7 @@ var nyt_top = function() {
 	          var httpGet = $.get;
 	        }
 
-                exports.set_key = function(api_key) { this.key = api_key; }
+                exports.setKey = function(api_key) { this.key = api_key; }
                 
 	        exports.section = function(section) {
 	          var url = 'http://api.nytimes.com/svc/topstories/v1/' + section + '.json?' + 'api-key=' + this.key;
