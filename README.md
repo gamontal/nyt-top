@@ -10,32 +10,35 @@ npm install nyt-top
 ## Usage Example
 
 ```javascript
-var nyt = require('nyt-top');
+var nytTop = require('nyt-top');
+nytTop.key('api key'); // set your developer key
 
-var api_key = 'your-api-key';
-nyt.setKey(api_key);
-
-nyt.section('science').last_updated; // => 2015-11-14T12:50:20-05:00
+nytTop.section('home', function (data) {
+    var results = data.results;
+    for (var i = 0; i < 10; i++) { // top ten most recent stories
+        console.log(results[i].title);
+    }
+});
 ```
 
 ## API
 
 To use the Top Stories API, you must sign up for an API key. Usage is limited to 5,000 requests per day (rate limits are subject to change). Please read and agree to the API Terms of Use and the Attribution Guidelines before you proceed.
 
-#### `setKey`
+#### `key`
 
-Description: Sets developer key to make requests
+Description: Sets developer API key to make requests
 
 **Parameters:**
   
 | Value      | Type      | Required |
 | ---------- | --------- | -------- |
-| `api_key`  | string    |   yes    |
+| `apiKey`  | string    |   yes    |
 
 
 #### `section`
 
-Description: Returns `article` object
+Description: Returns a list of articles and associated images by section
 
 **Parameters:**
   
