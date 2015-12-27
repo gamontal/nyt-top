@@ -25,30 +25,33 @@ nytTop.section('home', function (err, data) {
 
 ## API
 
-To use the Top Stories API, you must sign up for an API key. Usage is limited to 5,000 requests per day (rate limits are subject to change). Please read and agree to the API Terms of Use and the Attribution Guidelines before you proceed.
+### .key(apiKey)
 
-#### `key`
+> Sets developer API key.
 
-Description: Sets developer API key to make requests
+#### apiKey
 
-**Parameters:**
-  
-| Value      | Type      | Required |
-| ---------- | --------- | -------- |
-| `apiKey`  | string    |   yes    |
+Type: `string`
 
+NYT's Top Stories API key.
 
-#### `section`
+### .section(sectionName, callback)
 
-Description: Returns a list of articles
+> Get a list of articles
 
-**Parameters:**
-  
-| Name      | Type      | Required |
-| ---------- | --------- | --------- |
-| `section name` | string | yes    |
+#### sectionName
 
-**List of values:**
+Type: `string`
+
+NYT's article section.
+
+#### callback(err, data)
+
+Type: `function`
+
+Returns a list of articles in JSON format.
+
+**List of section values:**
 - home
 - world
 - national
