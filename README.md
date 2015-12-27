@@ -11,13 +11,15 @@ npm install nyt-top
 
 ```javascript
 var nytTop = require('nyt-top');
-nytTop.key('api key'); // set your developer key
+nytTop.key('api key'); // set your Top Stories API developer key
 
-nytTop.section('home', function (data) {
+nytTop.section('home', function (err, data) {
+  if (err) { console.log(err); } else {
     var results = data.results;
     for (var i = 0; i < 10; i++) { // top ten most recent stories
-        console.log(results[i].title);
+      console.log(results[i].title);
     }
+  }
 });
 ```
 
@@ -38,7 +40,7 @@ Description: Sets developer API key to make requests
 
 #### `section`
 
-Description: Returns a list of articles and associated images by section
+Description: Returns a list of articles
 
 **Parameters:**
   
