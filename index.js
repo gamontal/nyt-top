@@ -17,7 +17,7 @@ var topstories = function() {
     var url = 'http://api.nytimes.com/svc/topstories/v1/' + sec + '.json?' + 'api-key=' + this.key;
     var res = httpGet(url);
 
-    var resc = res.error.code;
+    var resc = res && res.error && res.error.code || null;
 
     if (resc === 403) {
       cb(new Error('Account Inactive'));
