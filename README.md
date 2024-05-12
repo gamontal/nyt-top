@@ -1,3 +1,5 @@
+## ⚠️ This repository is no longer maintained.
+
 # nyt-top (The Top Stories API)
 A Node.js wrapper for [The New York Times](http://www.nytimes.com/) [Top Stories API v1](http://developer.nytimes.com/docs/read/top_stories_api).
 
